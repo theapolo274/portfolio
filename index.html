@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Thế đây :))</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="">
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        align-items: center;
+    }
+    
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+    header,main,footer {
+        border-radius: 30px;
+    } 
+    header {
+        background-image: url(img/header.jpg);
+        color: white;
+        padding: 1rem ;
+        border-radius: 30px;
+    }
+    .header-area {
+        display: flex;
+        justify-content: space-around;
+    }
+    .logo a img {
+       width: 100px;
+       height: auto;
+       padding: 10px;
+       border: 1px solid ;
+       border-radius: 50%;
+       background-color: black;
+    }
+    
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .navbar ul {
+        list-style-type: none;
+    }
+    
+    .navbar ul li {
+        font-size: 25px;
+        display: inline;
+        margin: 0 30px;
+        padding: 3px;
+        background: #00bec9;
+        border: 10px solid #00bec9;
+        border-radius: 20px;
+    }
+    
+    .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        color: #333; 
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .navbar li a:hover {
+        color: aquamarine; 
+    }
+    
+    .Appointment{
+        background-color: chocolate;
+        font-size: 20px;
+        padding: 10px;
+        border: 2px solid red;
+        border-radius: 30px;
+    }
+    
+    .Appointment a {
+        color: whitesmoke;
+    }
+    
+    .slider_area {
+        background-color: #f4f4f4;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .slider_text h3 {
+        font-size: 50px;
+        color: bisque;
+    }
+    
+    @keyframes slideInFromLeft {
+        0% {
+            transform: translateX(-100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+    @keyframes slideInFromRight {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(0);
+        }
+    }
+    
+    .slider_text {
+        animation: 1s ease-out 0s 1 slideInFromLeft;
+        animation-fill-mode: forwards; 
+    }
+    
+    .image-container {
+        animation: 1s ease-out 0s 1 slideInFromRight;
+        animation-fill-mode: forwards; 
+    }
+    
+    
+    .image-container {
+        width: 450px; 
+        height: 450px; 
+        border-radius: 50% !important; 
+        overflow: hidden;
+    }
+    
+    .image-container img {
+        margin-top: -50px; 
+        width: 500px; 
+        height: 600px;
+    }
+    
+    .service_area {
+        background: #3B2930;
+        padding-bottom: 90px;
+        padding-top: 120px;
+    }
+    
+    .col-lg-4 ,.col-md-6 {
+        position: relative;
+        width: 100%;
+        min-height: 1px;
+        padding: 10px 30px;
+    }
+    
+    .single_service ,.text-center {
+        border: 3px solid yellow;
+        border-radius: 10px;
+        padding: 30px;
+    }
+    
+    .slider_area.scroll-effect.active , .service_area.scroll-effect.active {
+        background-color: cadetblue;
+    }
+    .text_area {
+        background-color: beige;
+        padding: 20px;
+    }
+    
+    .text1 {
+        text-align: center;
+        border-radius: 10%;
+        border: 2px solid red;
+        background-color: #00bec9;
+    }
+    .text2 {
+        font-size: large;
+    }
+    
+    .service_area {
+        background-color: #ddd;
+        padding: 20px;
+    }
+    .row1 h3 {
+        background-color: #00bec9;
+        font-size: 30px;
+        margin: 50px 0;
+        border-radius: 10px;
+        border: 1px solid red;
+        text-align: center;
+    }
+    .row1 h3:hover {
+        color: #fcc302;
+    }
+    
+    .content-profile{
+        min-height: 400px;
+        width: 100%;
+        margin: 30px 0;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 92px #00000012;
+    }
+    
+    .btap{
+        background-image: url(img/nen.jpg);
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+        padding: 30px 0;
+    }
+    
+    
+    .buoi1 {
+        text-align: center;
+        border: 3px solid yellow;
+        border-radius: 10px;
+    }
+    @keyframes blink {
+        0% { color: red; }
+        50% { color: blue; }
+        100% { color: red; }
+    }
+    
+    .buoi1 h1{
+        font-size: 25px;
+        height: 200px;
+        width: 70px;
+        text-align: center;
+        animation: blink 2s linear infinite;
+    }
+    .buoi1 li {
+        list-style-type: none;
+        text-align: center;
+        padding: 5px 0;
+    }
+    .buoi1 li a {
+        color: antiquewhite;
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+    .buoi1 li a:hover {
+        color: greenyellow; 
+    }
+    footer.scroll-effect.active {
+        background-color: beige;
+    }
+    
+    footer {
+        background: #343434;
+        padding: 100px 0px;
+        color: #FFF;
+        text-align: center;
+        padding: 10px 0;
+        background-color: azure;
+    }
+    footer a:hover {box-shadow: 0 0 10px ;}
+    
+    footer h3 {
+        font-size: 26px;
+        color: #FFF;
+    }
+    
+    .footer-menu ul {
+        padding: 0;
+        margin: 0;
+    }
+    
+    .footer-menu ul li {
+        list-style: none;
+    }
+    
+    .footer-menu ul li a {
+        color: #FFF;
+        text-decoration: none;
+    }
+    
+    .row2 ,.row3 {
+        display: flex;
+        text-align: center;
+        justify-content: space-around;
+    }
+    
+    .subscribe-form {
+        text-align: center;
+    }
+    .subscribe-form h2 {
+        color: #3B2930;
+        animation: blink 2s linear infinite;
+    }
+    @keyframes blink {
+        0% { color: red ; }
+        50% { color: #D4D4D5;}
+        100% { color: rred; }
+    }
+    .container {
+        margin: 30px 0;
+    }
+    ul.footer-social {
+        margin: 20px 0px 0px;
+        padding: 0px;
+    }
+    
+    ul.footer-social li {
+        list-style: none;
+        display: inline-flex;
+    }
+    
+    ul.footer-social li a {
+        width: 30px;
+        height: 30px;
+        background: #FFF;
+        text-align: center;
+        line-height: 30px;
+        color: #000;
+        border-radius: 50%;
+        margin-right: 8px;
+    }
+    
+    ul.footer-social li a:hover {
+        background: #fcc302;
+        color: #FFF;
+    } 
+    
+    .end {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .end h3 {
+        color: #fcc302;
+    }
+    .end a {
+        text-decoration: none; 
+        color: #000; 
+        transition: color 0.3s ease; 
+    }
+    
+    .end a:hover {
+        color: #007bff; 
+    }
+    
+    .col-md-5 {
+        background-color: yellowgreen;
+        display: flex;
+        text-align: right;
+        border: 2px solid aqua;
+        border-radius: 10%;
+    }
+    
+    .logo a:hover, .navbar li a:hover {
+        transform: scale(1.1); /* Phóng to khi rê chuột qua */
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    .footer-link:hover {
+        color: #007bff; /* Thay đổi màu sắc khi rê chuột qua */
+        transition: color 0.3s ease-in-out;
+    }
+    
+    .scroll-effect {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: all 0.5s ease-in-out;
+    }
+    
+    .scroll-effect.active {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    /* CSS cho menu toggle */
+    .menu-toggle {
+        display: none;
+        cursor: pointer;
+    }
+    
+    .menu-toggle .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #101010;
+    }
+    
+    
+    @media (max-width: 1050px) {
+        .navbar ul {
+            display: none;
+            width: 100%; 
+            text-align: center; 
+        }
+    
+        .navbar ul.open {
+            display: block; 
+        }
+    
+        .navbar ul li {
+            display: block; 
+            margin: 10px 0; 
+        }
+    
+        .navbar ul li a {
+            display: block;
+            padding: 10px; 
+        }
+    
+    
+        .menu-toggle {
+            display: block;
+        }
+    }
+</style>
+    
+    
+</head>
+<body>
+    <header>
+        <div class="header-area scroll-effect">
+                <div class="logo">
+                    <a href="index.html">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+                            
+                <nav class="navbar scroll-effect">
+                    <div class="menu-toggle" id="mobile-menu">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">About</a></li>
+                        <li><a href="">Skills</a></li>
+                        <li><a href="#content-profile scroll-effect">Projects</a></li>
+                        <li><a href="#row3">Contact</a></li>
+                    </ul>
+                </nav>                
+                            
+                <div class="Appointment">
+                    <a href="https://www.facebook.com/profile.php?id=100089988062361">Let’s Talk</a>
+                </div>
+        </div>
+    </header>
+    <main>
+        <div class="slider_area scroll-effect">
+            <div class="slider_text">
+                <h3>Hi there, I am Thế <br><span>Future programmer</span></h3>
+            </div>                
+            <div class="image-container">
+                <img src="img/the.jpg" alt="Thế">
+            </div>
+        </div>        
+        <div class="text_area">
+            <div class="text1">
+                <h3>I’m a university student in Hanoi, who loves clean, simple &amp; unique design. I also enjoy crafting and repairing electronics</h3>
+                <h3>I am a future programmer with experience in Web, Web Development and E-commerce. Passion for creativity and the ability to create unique and exciting game experiences.</h3>
+            </div>
+            <div class="text2">
+                <h2>My preference</h2>
+                <p>* Develop and maintain new features for games using Unity.</p>
+                <p>* Optimize game performance and error handling.</p> 
+                <p>* Work closely with teammates to ensure the best interaction between different elements of the game.</p>
+            </div>
+        </div>
+        
+        <div class="service_area scroll-effect">
+                <div class="row1">
+                    <h3>Skills</h3>
+                </div>
+                <div class="row2">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_service text-center">
+                            <div class="icon">
+                                <img src="img/1.svg" alt="">
+                            </div>
+                            <h2>Web Design</h2>
+                            <p>Web Design focuses on creating creative and effective user interfaces. We provide design solutions that are interactive, user-friendly, and adhere to modern design trends. The creativity and dedication of the design team helps create a unique and engaging online experience for customers.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_service text-center">
+                            <div class="icon">
+                                <img src="img/2.svg" alt="">
+                            </div>
+                            <h2>Web Development</h2>
+                            <p>Our Web Development focuses on turning ideas into reality through high-quality source code and advanced development techniques. We use the latest technologies like Node.js, React, and Angular to build powerful and flexible web applications. Special attention to performance and user interaction helps ensure that your products run smoothly on any device.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="single_service text-center">
+                            <div class="icon">
+                                <img src="img/3.svg" alt="">
+                            </div>
+                            <h2>E-commerce</h2>
+                            <p>Our e-commerce supports businesses in building and developing online stores flexibly and effectively. We use platforms like Shopify and WooCommerce to optimize the online shopping experience, from product management to secure checkout. Our team of experts ensures that your store not only looks great, but is also highly efficient and secure.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-profile scroll-effect">
+                    <div class="row1">
+                        <h3>Projects</h3>
+                    </div>
+                    <div class="btap">
+                        <ul class="buoi1">
+                            <h1>Bài tập buổi 1</h1>
+                            <li><a href="">Bài 1</a></li>
+                            <li><a href=""> Bài 2.1</a></li>
+                            <li><a href="">Bài 2.2</a></li>
+                            <li><a href="">Bài 2.3</a></li>
+                            <li><a href="">Bài 3</a></li>
+                            <li><a href="">Bài 4</a></li>
+                        </ul>
+        
+                    <ul class="buoi1">
+                        <h1>Bài tập buổi 2</h1>
+                        <li><a href="/Buổi 2/Bài 1/index2.1.html">Bài 1</a></li>
+                        <li>
+                            <a href="/Buổi 2/Bài 2/index2.2.1.html"> Bài 2.1</a>
+                        </li>
+                        <li><a href="/Buổi 2/Bài 2/index2.2.2.html">Bài 2.2</a></li>
+                        <li>
+                            <a href="/Buổi 2/Bài 3/index3.html">Bài 3</a>
+                        </li>
+                        <li>
+                            <a href="/Buổi 2/Bài 4/index4.1.html">Bài 4</a>
+                        </li>
+                        <li>
+                            <a href="/Buổi 2/Web cá nhân/indexwebcanhan.html">Web Contact</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="buoi1">
+                        <h1>Bài tập buổi 3</h1>
+                        <li><a href="Buổi 3/baitrnelop.html">Bài 1 trên lớp</a></li>
+                        <li>
+                            <a href="Buổi 3/baitrenlop2.html"> Bài 2 trên lớp</a>
+                        </li>
+                        <li><a href="Buổi 3/bai1/bai1b3.html">Bài 1</a></li>
+                        <li>
+                            <a href="Buổi 3/bai2/bai2b3.html">Bài 2</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="buoi1">
+                        <h1>Bài tập buổi 4</h1>
+                        <li>
+                            <a href="Buỏi 4/lab4.1.html">Bài 1</a>
+                        </li>
+                        <li>
+                            <a href="Buỏi 4/lab4.3.html">Bài 3</a></li>
+                        <li>
+                            <a href="Buỏi 4/lab4.4.html">Bài 4</a>
+                        </li>
+                        <li>
+                            <a href="Buỏi 4/lab4.5.html">Bài 5</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="buoi1">
+                        <h1>Bài tập buổi 5-1</h1>
+                        <li><a href="Buổi 5/bai2.html">Bài 2</a></li>
+                        <li>
+                            <a href="Buổi 5/bai3.html"> Bài 3</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="buoi1">
+                        <h1>Bài tập buổi 5-2</h1>
+                        <li><a href="Buổi 5/dovat.html">Bài trên lớp</a></li>
+                        <li>
+                            <a href="Buổi 5/bai4.html"> Bài 4</a>
+                        </li>
+                        <li><a href="Buổi 5/bai5.html">Bài 5</a></li>
+                        <li>
+                            <a href="Buổi 5/bai6.1.html">Bài 6.1</a>
+                        </li>
+                        <li>
+                            <a href="Buổi 5/bai6.2.html">Bài 6.2</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="buoi1">
+                        <h1>Bài tập buổi 7</h1>
+                        <li><a href="">Bài 1</a></li>
+                        <li>
+                            <a href=""> Bài 2</a>
+                        </li>
+                        <li><a href="">Bài 3</a></li>
+                        <li>
+                            <a href="">Bài 4</a>
+                        </li>
+                        <li>
+                            <a href="">Bài 5</a>
+                        </li>
+                    </ul>
+        
+                    <ul class="buoi1">
+                        <h1>Bài tập buổi 8</h1>
+                        <li><a href="">Bài 1</a></li>
+                        <li>
+                            <a href=""> Bài 2</a>
+                        </li>
+                        <li><a href="">Bài 3</a></li>
+                        <li>
+                            <a href="">Bài 4</a>
+                        </li>
+                        <li>
+                            <a href="">Bài 5</a>
+                        </li>
+                    </ul>
+                            </div>
+                </div>
+    
+        </div>
+    </main>
+    <footer class="scroll-effect">
+	    <div class="container">
+		    <div class="row3">
+			    <div class="end">
+					<h3>About</h3>
+					
+					    <a href="">Self and Expertise</a> 
+					    <a href="">Passion and Goal</a> 
+					    <a href="">Special Skills and Achievements</a> 
+					    <a href="">Individual</a> 
+							 
+				</div>
+				<div class="end">
+                    <h3>Services</h3>
+
+					        <a href="">How to Order</a> 
+					        <a href="">My Product</a> 
+					        <a href="">Order Status</a> 
+					        <a href="">Service List</a> 
+					        <a href="">Working process</a> 
+                            <a href="">Payment Method</a> 
+					    
+                    
+				</div>
+				 <div class="col-md-5">
+				     <div class="subscribe-form">
+                        <h2>Contact</h2>
+						<ul class="footer-social">
+						    <li> <a href="https://github.com/theapolo274"> <i class="fab fa-github" aria-hidden="true"></i></a>  </li>
+							<li> <a href="https://www.facebook.com/profile.php?id=100089988062361"> <i class="fab fa-facebook" aria-hidden="true"></i></a>  </li>
+							<li> <a href="https://www.tiktok.com/@t_red274?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok" aria-hidden="true"></i></a>  </li>
+							<li> <a href="0396112273"><i class="fa fa-phone" aria-hidden="true"></i></a>  </li>
+						</ul>
+					 </div>
+				 </div>	 
+			</div>
+		</div>
+        <p style="color: red;">©<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with
+        <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://www.facebook.com/profile.php?id=100089988062361" target="_blank">Thế</a></p>
+	</footer>
+    <script src="script.js"></script>
+</body>
+</html>
